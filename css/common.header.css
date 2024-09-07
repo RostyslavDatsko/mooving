@@ -1,0 +1,139 @@
+.header__nav {
+    margin-left: 18.47%;
+    margin-right: 18.47%;
+}
+
+.header__info {
+    background-color: var(--secondary-background-light-color);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 40px;
+    padding-left: 40px;
+    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    padding-left: 18.47%;
+    padding-right: 18.47%;
+}
+
+.header__title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary-text-dark-color);
+}
+
+.header__help-text {
+    padding-right: 2px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary-text-dark-color);
+}
+
+.header__contact {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary-text-accent-color);
+}
+
+.header__contact-link {
+    text-decoration: none;
+    color: var(--primary-text-accent-color);
+}
+
+.header__help-text-and-contact {
+    display: flex;
+    flex-direction: row;
+}
+
+.header__nav {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.header__logo {
+    display: unset;
+    width: 160px;
+    height: auto;
+}
+
+
+.header__menu {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.header__menu-item {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    margin-left: 17.500px;
+    margin-right: 17.500px;
+    position: relative; /* Required to position the pseudo-element */
+}
+
+.header__menu-link {
+    text-decoration: none;
+    color: var(--tertiary-text-dark-color);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.header__menu-link:hover {
+    color: var(--primary-text-accent-color);
+    /* Remove underline here since we handle it with pseudo-element */
+}
+
+.header__menu-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px; /* Adjust the thickness of the underline */
+    background-color: var(--primary-text-accent-color); /* Use the same color as hover for consistency */
+    transform: scaleX(0); /* Initially hide the underline */
+    transition: transform 0.3s ease; /* Smooth transition for the underline */
+}
+
+.header__menu-item:hover::after {
+    transform: scaleX(1); /* Show underline when hovering over the menu item */
+}
+
+
+.header__social-media {
+    width: 110px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__social-media-item-content {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary-icon-accent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__social-media-item-content:hover {
+    background-color: var(--primary-icon-hover-accent-color);
+}
+
+.header__social-media-icon-facebook, .header__social-media-icon-instagram, .header__social-media-icon-youtube {
+    width: 17px;
+    height: auto;
+}
+
+

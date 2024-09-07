@@ -6,8 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
+    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
+    <header 
+    data-hx-trigger="load"
+    data-hx-swap="outerHTML"
+    data-hx-get="common.header.partial.html"
+    ></header>
+    <main>
+        <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.hero.partial.html"
+        ></section>
+        <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="comprehensive-moving-solutions.partial.html"
+        ></section>
+        <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="our-services.partial.html"
+        ></section>
+        <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="about-us.partial.html"
+        ></section>
+        <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="our-moving-process.partial.html"
+        ></section>
+        <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="stress-free-moving.partial.html"
+        ></section>
+        <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="request-quote.partial.html"
+        ></section>
+        <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="question-answer.partial.html"
+        ></section>
+        <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="moving-tips.partial.html"
+        ></section>
+    </main>
 </body>
 </html>

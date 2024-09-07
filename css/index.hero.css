@@ -1,0 +1,13 @@
+
+.hero {
+    background: url('/img/hero/hero-main.png');
+}
+
+.hero__content {
+    margin-top: 240px;
+    margin-bottom: 240px;
+    margin-left: 18.47%;
+    margin-right: 51.53%;
+    width: 570px;
+    height: 376.39px;
+}

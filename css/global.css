@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-background-light-color:   #fff;
+  --secondary-background-light-color: #f5f4f2;
+
+  --primary-background-dark-color:   #5c524b;
+  --secondary-background-dark-color: #AB9477;
+  
+  --primary-text-light-color:   #fff;
+  --secondary-text-light-color: rgba(255, 255, 255, 0.57);
+  --tertiary-text-light-color:  #d6d6d6;
+
+  --primary-text-dark-color:   #5c524b;
+  --secondary-text-dark-color: #76706b;
+  --tertiary-text-dark-color:  #726963;
+  --general-text-dark-color:   #89807a;
+ 
+  --primary-text-accent-color: #f9c649;
+
+  --primary-icon-accent-color: #f9c649;
+  --primary-icon-hover-accent-color: #F7B718;
+  
+
+  --primary-button-light-color:           #fff;
+  --primary-button-accent-color:          #f9c649;
+  --primary-button-light-animation-color: #fff;
+  --primary-button-dark-animation-color:  #5c524b;
+
+  --divider-color: rgba(43, 43, 43, 0.2);
+ 
+  scroll-behavior: smooth;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
